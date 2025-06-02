@@ -1,3 +1,3 @@
-module github.com/rocket049/goZbarScanner
+module gitee.com/rocket049/goZbarScanner
 
 go 1.23.4
