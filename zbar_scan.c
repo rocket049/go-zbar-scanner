@@ -10,7 +10,7 @@ Author: Fu Huizhong <fuhuizn@163.com>
 char *zbar_scan(unsigned char *image_data,int width,int height, char *fmt)
 {
     zbar_image_t *zbar_image = zbar_image_create();
-    zbar_image_set_format(zbar_image,*(unsigned long *)fmt);
+    zbar_image_set_format(zbar_image,*(unsigned int *)fmt);
     zbar_image_set_size(zbar_image,width,height);
     uint8_t *qrcodedata = (uint8_t *)calloc(width*height,sizeof(uint8_t));
     memcpy(qrcodedata,image_data,width*height);
